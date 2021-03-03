@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop Notifier</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../../lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/vendors/fontawesome/css/all.css">
+    <link rel="shortcut icon" href="../assets/icon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/icon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="">
+        <section class="wrapper">
+            <div class="content blur">
+                <div class="col-7 content-left">
+                    <h2 class="text-light">Tasks</h2>
+                    <hr>
+                    <div class="table-responsive">
+                        <table class="table borderless" id="taskTable"></table>
+                    </div>
+                        
+                </div>
+                <div class="col-4">
+                    <form action="" id="taskForm">
+                        <h3 class="text-center">Add task</h3>
+                        <div class="form-group">
+                            <label for="">Title</label>
+                            <input type="text" name="title" id="title" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Notification Time</label>
+                            <input type="time" name="noticeTime" id="noticeTime" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Notification Date</label>
+                            <input type="date" name="noticeDate" id="noticeDate" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Add task" class="btn-block" id="addTaskBtn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- script -->
+    <script src="../../lib/js/jquery-3.4.1.min.js"></script>
+    <script src="../../lib/js/localbase.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <!-- <script src="../assets/js/notification.js"></script> -->
+</body>
+</html>

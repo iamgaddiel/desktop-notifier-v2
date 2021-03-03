@@ -1,0 +1,92 @@
+*{
+    --main-color: whitesmoke;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: relative;
+    height: 100vh;
+}
+
+body::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background: linear-gradient(to top right, #CB356B 5%, #BD3F32); */
+    background: url('../../assets/images/bg-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blur(6px); */
+    z-index: -1;
+}
+
+.blur{
+    border-radius: 10px;
+    padding: 10px;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 4.0px );
+    height: 80vh;
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+#desc{
+    max-height: 50px;
+}
+
+#addTaskBtn{
+    color: #fff;
+    background: #1212aa;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.table{
+    border: none !important;
+}
+
+.notice-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #fff;
+    padding: 10px;
+}
+
+.notice-image img{
+    width: 100%;
+    height: auto;
+}
+
+button{
+    border: none;
+    background: transparent;
+}
+
+.content-left{
+    height: 100%;
+    overflow-y: auto;
+}
